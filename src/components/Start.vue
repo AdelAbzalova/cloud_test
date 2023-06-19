@@ -122,7 +122,6 @@ export default {
           " " +
           nameArray[1].substring(0, 1).toUpperCase() +
           nameArray[1].substring(1);
-        console.log(fullName);
         this.initials = initials;
         this.name = fullName;
       }
@@ -177,7 +176,6 @@ export default {
       } else {
         this.isEmailValid = false;
       }
-      console.log(this.isEmailValid);
     },
   },
   computed: {

@@ -210,7 +210,6 @@
       </div>
     </form>
   </div>
-  {{ this.sendResult }}
   <app-modal v-if="this.sendResult != ''"></app-modal>
 </template>
 
@@ -353,7 +352,6 @@ export default {
       if (this.page < 3) {
         this.page++;
       }
-      console.log(this.$store.state);
       this.$store.dispatch("changeData", [
         this.nickname,
         this.name,
